@@ -1,3 +1,51 @@
 project:
   type: website
   output-dir: docs
+
+website:
+  # announcement: 
+    # icon: info-circle
+    # dismissable: true
+    # content: "**Note** that this week's information is delayed due to an NCEI system outage"
+    # type: info
+    # position: below-navbar
+  title: "Pacific satellite monitoring of the surface ocean"
+  navbar:
+    background: "#335075ff"
+    left:
+      - href: index.qmd
+        text: Home
+      # - about.qmd
+    # tools:
+      # - icon: github
+        # href: https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring
+        # aria-label: Northeast Pacific SST monitoring
+  back-to-top-navigation: true
+  reader-mode: true
+  favicon: figures/1F30A.svg
+  # page-footer: 
+    # left: |
+    #   Ocean Sciences Division <br>
+    #   Institute of Ocean Sciences, Sidney B.C.
+      
+    # right: |
+    #   For questions or comments please contact us at: <br>
+    #   DFO.PAC.SCI.IOSData-DonneesISO.SCI.PAC.MPO@dfo-mpo.gc.ca
+
+
+format:
+  html:
+    page-layout: full
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    link-external-newwindow: true
+    linkcolor: "#335075ff"
+
+editor: visual
+lang: en
+
+execute:
+  freeze: auto
